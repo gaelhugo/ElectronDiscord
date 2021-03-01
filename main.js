@@ -10,6 +10,8 @@ function createWindow() {
     },
   });
   win.loadFile("index.html");
+  win.setFullScreen(true);
+  // win.maximize();
 }
 
 function initBot() {
