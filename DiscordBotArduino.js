@@ -2,10 +2,10 @@ const { Client, MessageEmbed } = require("discord.js");
 const { Notification } = require("electron");
 const { Board, Led } = require("johnny-five");
 
+const TOKEN = "***";
+
 class DiscordBotArduino {
-  constructor(
-    token = "ODAyOTM0Mjc2ODQ4MjIyMjQ4.YA2c0Q.mcqsAjhjm3TiC7WK79s2QrD8Otg"
-  ) {
+  constructor(token = TOKEN) {
     this.token = token;
     this.client = new Client();
 

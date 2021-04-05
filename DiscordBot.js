@@ -1,11 +1,10 @@
 const { Client, MessageEmbed } = require("discord.js");
 const { Notification, ipcMain } = require("electron");
 
+const TOKEN = "***";
+
 class DiscordBot {
-  constructor(
-    win,
-    token = "ODAyOTM0Mjc2ODQ4MjIyMjQ4.YA2c0Q.mcqsAjhjm3TiC7WK79s2QrD8Otg"
-  ) {
+  constructor(win, token = TOKEN) {
     this.win = win;
     this.token = token;
     this.client = new Client();

@@ -9,7 +9,7 @@ function createWindow() {
       nodeIntegration: true,
     },
   });
-  win.loadFile("index.html");
+  win.loadFile("indexP5example.html");
   win.setFullScreen(true);
   // win.maximize();
 }

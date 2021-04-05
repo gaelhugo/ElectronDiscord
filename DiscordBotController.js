@@ -3,10 +3,10 @@ const { Notification } = require("electron");
 const robot = require("robotjs");
 // http://robotjs.io/
 
+const TOKEN = "***";
+
 class DiscordBotController {
-  constructor(
-    token = "ODAyOTM0Mjc2ODQ4MjIyMjQ4.YA2c0Q.mcqsAjhjm3TiC7WK79s2QrD8Otg"
-  ) {
+  constructor(token = TOKEN) {
     this.token = token;
     this.client = new Client();
 
